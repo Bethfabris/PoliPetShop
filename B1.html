@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PoliPetSupermarket</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Cuprum" rel="stylesheet">
+	<script src="./js/main.js"></script>
+</head>
+<body>
+	<!--Cabecera-->
+<header>
+	<h1 style="text-align: center;">PoliPetSupermarket</h1>
+	
+
+	<!--menu-->
+	<section class="menu">
+	<center>
+		<nav>
+			<ul>
+			  <li><a href="inicio.html"><i class="icon-casa"></i> QUIENES SOMOS </a> </li>
+			  <li><a href="B1.html"><i class="icon-lupa"></i> REGISTRO</a> </li>
+	          <li><a href="PA.html"><i class="icon-contacto"></i> PRODUCTOS</a> </li>
+			  <li><a href="PP.html"><i class="icon-contacto"></i> MARCAS</a> </li>
+			  <li><a href="PN.html"><i class="icon-contacto"></i> PRECIOS ESPECIALES</a> </li>
+	          <li><a href="carrito.html"><i class="icon-precio"></i>CARRITO DE COMPRAS  <div id="countCarrito" style="color:yellow ;display: inline-block;"></div></a> </li>   
+	          <li><a href="contactenos.html"><i class="icon-question"></i>CONTACTENOS</a> </li>
+       		</ul>		
+   		</nav>
+	</center>
+    </section>
+</header>
+<br><br>
+
+<center>
+
+
+&nbsp;
+
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Búsqueda por precio de paquete: <input type="search" name="busqueda" placeholder="">
+
+    <input type="submit" value="Buscar">
+
+  </p>  
+
+</form>
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Busca entre nuestros modelos: <input type="search" name="busquedamodelos" list="listamodelos">
+
+    <input type="submit" value="Buscar">
+
+  </p>
+
+</form>
+
+<datalist id="listamodelos">
+
+  <option value="PASEADORES ATLETICOS">
+
+  <option value="PASEADORES & PROFES">
+
+  <option value="PASEDORES Y NADA MAS">
+
+  
+
+</datalist>
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Buscar por código: <input type="search" name="busquedacodigo" pattern="[A-Za-z0-9]{8,20}" title="Un código válido consiste en una cadena con 4 a 6 caracteres, cada uno de los cuales es una letra o un dígito" required>
+
+    <input type="submit" value="Buscar">
+
+  </p>
+
+</form>
+
+
+
+
+

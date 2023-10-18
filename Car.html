@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TIENDA VIRTUAL</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Cuprum" rel="stylesheet">
+  <script src="./js/main.js"></script>
+</head>
+<body>
+	<!--Cabecera-->
+<header>
+	<h1 style="text-align: center;">TIENDA VIRTUAL</h1>
+	
+
+	<!--menu-->
+	<section class="menu">
+	<center>
+		<nav>
+			<ul>
+			<li><a href="inicio.html"><i class="icon-casa"></i> INICIO</a> </li>
+			  <li><a href="BUSQUEDA.html"><i class="icon-lupa"></i> Busqueda</a> </li>
+	          <li><a href="Teclados.html"><i class="icon-contacto"></i> Teclados</a> </li>
+			  <li><a href="mouse.html"><i class="icon-contacto"></i> Mouse</a> </li>
+			  <li><a href="diademas.html"><i class="icon-contacto"></i> Diademas</a> </li>
+	          <li><a href="curriculum vitae.html"><i class="icon-precio"></i>CARRITO DE COMPRAS</a> </li>   
+	          <li><a href="contactenos.html"><i class="icon-question"></i>Contáctenos</a> </li>
+       		</ul>		
+   		</nav>
+	</center>
+    </section>
+</header>
+<br><br>
+
+
+
+
+
+
+
+
+
+<aside class="product-detail">
+    <div class="title-container">
+      <img src="./icons/flechita.svg" alt="arrow">
+      <p class="title">My order</p>
+    </div>
+
+    <div class="my-order-content">
+      
+      <div class="shopping-cart">
+        <figure>
+          <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+        </figure>
+        <p>Bike</p>
+        <p>$30,00</p>
+        <img src="./icons/icon_close.png" alt="close">
+      </div>
+      
+      <button class="primary-button">
+        Checkout
+      </button>
+    </div>
+  </div>
+  </aside>
+  
+  
+  
+  
+  product-detail {
+      width: 360px;
+      padding: 24px;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0;
+    }
+    .title-container {
+      display: flex;
+    }
+    .title-container img {
+      transform: rotate(180deg);
+      margin-right: 14px;
+    }
+    .title {
+      font-size: var(--lg);
+      font-weight: bold;
+    }
+    .order {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
+      background-color: var(--text-input-field);
+      margin-bottom: 24px;
+      border-radius: 8px;
+      padding: 0 24px;
+    }
+    .order p:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+    }
+    .order p span:nth-child(1) {
+      font-size: var(--md);
+      font-weight: bold;
+    }
+    .order p:nth-child(2) {
+      text-align: end;
+      font-weight: bold;
+    }
+    .shopping-cart {
+      display: grid;
+      grid-template-columns: auto 1fr auto auto;
+      gap: 16px;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+    .shopping-cart figure {
+      margin: 0;
+    }
+    .shopping-cart figure img {
+      width: 70px;
+      height: 70px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+    .shopping-cart p:nth-child(2) {
+      color: var(--very-light-pink);
+    }
+    .shopping-cart p:nth-child(3) {
+      font-size: var(--md);
+      font-weight: bold;
+    }
+    .primary-button {
+      background-color: var(--hospital-green);
+      border-radius: 8px;
+      border: none;
+      color: var(--white);
+      width: 100%;
+      cursor: pointer;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+    }
+    @media (max-width: 640px) {
+      .product-detail {
+        width: 100%;
+      }
+    }
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<center>
+	<ul class="horizontal">
+		<div class="box">
+  <div class="container-1">
+      <span class="icon"><i class="fa fa-search"></i></span>
+      <input type="search" id="search" placeholder="Search..." />
+  </div>
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Búsqueda de accesorio: <input type="search" name="busqueda" placeholder="Teclado, Mouse, Diadema...">
+
+    <input type="submit" value="Buscar">
+
+  </p>  
+
+</form>
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+  
+
+    Busca un código: <input type="search" name="busquedacodigo" size="6" maxlength="6">
+
+    <input type="submit" value="Buscar">
+
+  </p>
+
+</form>
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Busca entre nuestros modelos: <input type="search" name="busquedamodelos" list="listamodelos">
+
+    <input type="submit" value="Buscar">
+
+  </p>
+
+</form>
+
+<datalist id="listamodelos">
+
+  <option value="Tradicional">
+
+  <option value="Gamer">
+
+  <option value="Profesional">
+
+  
+
+</datalist>
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Buscar por código: <input type="search" name="busquedacodigo" pattern="[A-Za-z0-9]{8,20}" title="Un código válido consiste en una cadena con 4 a 6 caracteres, cada uno de los cuales es una letra o un dígito" required>
+
+    <input type="submit" value="Buscar">
+
+  </p>
+
+</form>
+
+
+
+
+
+
+
+<!--	</ul>
+</center>
+		<br><br>
+
+	<h3><i class="fa fa-search"></i></h3>
+
+		<div style ="margin-right: 300px;"><img src= <!--"imagen/cesantias.jpg" align="right" border="5" width="400" height="200"> <br></div>
+			<h2 style="margin-left: 300px;" align="center">¿Que son las Cesantias?</h2> <br></div>
+			<div style ="margin-left: 300px;" align="left">Es un pago que es responsabilidad del empleador y corresponde a un mes de salario por cada año de servicio prestado. Puedes usarlo cuando estés inactivo laboralmente para pagar la universidad de tus hijos, la compra de tu vivienda, créditos hipotecarios o impuesto prediales.
+			Si eres un trabajador independiente puedes afiliarte voluntariamente y ahorrar la doceava parte de tus ingresos anuales como Cesantias.<br><br>
+		</div>
+	</p> <br>
+
+		<br><br><br> 
+
+		<div style ="margin-right: 300px;"><img src="img/cesantias2.jpg" align="right" border="5" width="400" height="200"> <br></div>
+			<h2 style="margin-left: 300px;" align="center">¿Para que sirven?</h2> <br></div>
+			<div style ="margin-left: 300px;" align="left">Se consideran como el mejor auxilio de desempleo. También te pueden apoyar en tus proyectos de:<br><br>
+		</div>
+	</p> <br><br><br>
+ 	  		
+
+		<br><br><br>
+
+		<div style ="margin-right: 300px;"><img src="img/cesantias3.jpg" align="right" border="5" width="400" height="200"> <br></div>
+			<h2 style="margin-left: 300px;" align="center">Portafolio de Cesantias</h2> <br></div>
+			<div style ="margin-left: 300px;" align="left">Un esquema de ahorro que le permite a nuestros afiliados escoger el portafolio de Cesantías que más se ajuste a sus objetivos y expectativas de ahorro, ya sea para educación o vivienda o como auxilio de desempleo. De acuerdo con su perfil de inversión y la manera como usan las Cesantías, los afiliados escogen el portafolio adecuado:<br><br>
+		</div>
+		<br><br>
+
+		<P style="margin-left: 300px"><strong> INGRESA A TU FONDO</strong></P> 
+		<br>
+
+		<center>
+		<form action="ingresar">
+			<label for="usuario">
+				<span>Usuario</span>
+				<input type="email" id="usuario" placeholder="correo electronico" />
+			</label>
+			<br>
+
+			<label for="contraseña">
+				<span>Password</span>
+				<input type="password" id="contraseña" placeholder="contraseña" />
+			</label>
+			<br>
+			<input type="submit">
+		</form>
+		</center>
+
+
+	</p> <br><br><br><br>
+		
+		<br><br><br> 
+			
+</body>
+</html>
